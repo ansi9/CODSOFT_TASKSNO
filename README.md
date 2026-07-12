@@ -104,3 +104,39 @@ A desktop Rock Paper Scissors game built with **Python** and **Tkinter**, featur
 3. The result and updated scores are shown instantly.
 4. Click **Play Again** to start a new round.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Password Generator
+
+A desktop password generator built with Python and PyQt5. Generates strong random passwords with adjustable length and character composition, or lets you type and check your own password strength.
+
+## Features
+
+- **Characters mode** — generate a random password with sliders for total length, digit count, capital letter count, and symbol count
+- **Words mode** — type your own password and see its strength evaluated live
+- **Animated strength indicator** — a colored progress bar and an animal GIF mascot (mouse → sheep → tiger → bear → elephant) that changes based on password strength, each with a custom-font caption
+- **Copy to clipboard** — one click via the Copy button
+- **Custom styling** — QSS-driven UI matching the reference design (rounded sliders, pill-shaped buttons)
+
+## Tech stack
+
+- Python 3
+- PyQt5 (GUI framework)
+- `random` / `string` (password generation)
+
+
+## How strength is scored
+
+The app awards 25 points each for: length ≥ 8 characters, containing a digit, containing an uppercase letter, and containing a symbol — for a max score of 100. That score maps to one of 5 tiers (mouse → elephant), each with its own bar color and mascot.
+
+## Credits
+
+- Animal GIFs: sourced from free stock/sticker sites — check individual licenses before distributing or submitting this project, several require visible attribution.
+- Caption font: Mochibop Demo (1001fonts) — confirm license terms (free vs. personal-use-only) before distribution.
+- Design reference: TunnelBear Password Generator concept, Dribbble (by the TunnelBear team).
+
+## Known limitations / next steps
+
+- Words mode doesn't generate passphrases from a word list yet — it's currently just a free-text field with strength checking.
+- "Use Password" button has no wired behavior yet — placeholder for future functionality (e.g. auto-copy + close, or hand-off to another field).
+- Strength scoring is a simple 4-factor point system, not a full entropy-based calculation.
