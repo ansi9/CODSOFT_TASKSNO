@@ -1,0 +1,48 @@
+QPushButton {
+    border-radius: 14px;
+    padding: 12px 4px;
+    font-size: 11pt;
+    font-weight: 600;
+    min-height: 40px;
+}
+
+#copyButton {
+    background-color: white;
+    border: 1.5px solid #cccccc;
+    color: #333333;
+}
+
+#copyButton:hover {
+    background-color: #f5f5f5;
+}
+
+#useButton {
+    background-color: #37474f;
+    color: white;
+    border: none;
+}
+
+#useButton:hover {
+    background-color: #2c3940;
+}
+
+
+QSlider::groove:horizontal {
+    height: 4px;
+    background: #d0d0d0;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal {
+    background: white;
+    border: 2px solid #999;
+    width: 18px;
+    height: 18px;
+    margin: -8px 0;
+    border-radius: 9px;
+}
+
+QSlider::sub-page:horizontal {
+    background: #888;
+    border-radius: 2px;
+}
